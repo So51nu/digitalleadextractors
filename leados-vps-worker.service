@@ -1,0 +1,14 @@
+[Unit]
+Description=LeadOS VPS Worker
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/leados-vps-worker
+ExecStart=/usr/bin/node /var/www/leados-vps-worker/server-enterprise.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

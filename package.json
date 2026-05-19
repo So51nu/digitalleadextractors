@@ -1,0 +1,15 @@
+{
+  "name": "leados-enterprise-worker",
+  "version": "2.0.0",
+  "main": "server-enterprise.js",
+  "scripts": {
+    "start": "node server-enterprise.js",
+    "deep-google": "node server.js"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "playwright": "latest"
+  }
+}
